@@ -26,7 +26,7 @@ This application was designed with mobile use in mind, it will work on tablets b
 
 
 ### Local SQLite Database
-![Local Database Screenshot](https://github.com/kylehackett99/GSDEX-PokemonTeamBuilder/blob/main/screenshots/mainpage.png)  
+![Local Database Screenshot](https://github.com/kylehackett99/GSDEX-PokemonTeamBuilder/blob/main/screenshots/datatable.png)  
 
 Pictured above is the structure that stores all the pokemon data behind the scenes. The SQLite Database allows for data to be saved between sessions, as well as for fast sorting and filtering. The database is impacted by the search box, as well as the Sort/Filter Activity. There is another local database has the same schema but holds at most 6 elements, saving the user's current team between sessions. 
  
