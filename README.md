@@ -5,7 +5,7 @@ Built by Kyle Hackett
 CS443 - Mobile Applications Term Project  
 Professor Sheng  
 
-![MainActivityScreenshot](https://upload.wikimedia.org/wikipedia/commons/5/56/Tiger.50.jpg)
+![MainActivityScreenshot](https://github.com/kylehackett99/GSDEX-PokemonTeamBuilder/blob/main/screenshots/introimage.png)
 
 Table of Contents here later ;)
 
@@ -18,15 +18,15 @@ This application pulls data from an external database, and stores that data loca
 ## **Application Design**
 
 ### MainActivity
-![MainActivityScreenshot](https://upload.wikimedia.org/wikipedia/commons/5/56/Tiger.50.jpg)  
+![MainActivityScreenshot](https://github.com/kylehackett99/GSDEX-PokemonTeamBuilder/blob/main/screenshots/mainpage.png)  
 Main View where the user will perform most of their actions. Users can access the other Activities as well as manage their team by either adding or removing members. Team members can be added to their team by clicking on their image in the list, which can be traversed either by search box or by scrolling through. The search box allows users to search for a particular pokemon by name, or by ability. Clicking a species' image in the team will remove that member. Filter and Sorting options are availible by clicking the Filter/Sort Button. Clicking on a Pokemon Species will show the user a menu with additional info. 
 
 ### Pokemon Details
-![Details Screenshot](https://upload.wikimedia.org/wikipedia/commons/5/56/Tiger.50.jpg)  
+![Details Screenshot](https://github.com/kylehackett99/GSDEX-PokemonTeamBuilder/blob/main/screenshots/pokemondetails.png)  
 This Activity displays additional information to the user about the specified Pokemon, including Name, Types, Stats, and Abilities. 
 
 ### Sort & Filtering Options
-![Sort/Filtering Screenshot](https://upload.wikimedia.org/wikipedia/commons/5/56/Tiger.50.jpg)    
+![Sort/Filtering Screenshot](https://github.com/kylehackett99/GSDEX-PokemonTeamBuilder/blob/main/screenshots/sortdetails.png)    
 Numerous Searching and Filtering options are displayed to the user. The top spinner provide sorting options, including by name, ID number, or statistic. You can also order them in descending or ascending order by using the switch next to the sort options. The rest of the options on the page are for filtering. You can filter by a pokemon's generation of origin, or by type by toggling your choice.
 
 
