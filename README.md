@@ -9,18 +9,18 @@ Professor Sheng
 
 ## Table of Contents
   1. [Project Statement](#project)
-  2. Application Design
-  3. Implementation and Evaluation
-  4. References
-  5. Experiences and Thoughts
-  6. Install
-  7. License
+  2. [Application Design](#application-design)
+  3. [Implementation and Evaluation](#implementation)
+  4. [References](#references)
+  5. [Experiences and Thoughts](#experience)
+  6. [Install](#install)
+  7. [License](#License)
 
-## **Project Statement** 
+## **Project Statement** <a name="project"></a>
 There are many different Pokedex (pokemon encyclopedia) apps on the market. The intent of this iteration was to surpass the functionality of those applications. I wanted to combine the concept of the traditional Pokedex app with the pokemon team builder web apps scattered across the internet, but with an added twist. I wanted to make finding pokemon that fit your team as easy as possible, as well as provide feedback to the user on their team's weaknesses. I have not seen too many team builders out there that have this functionality _**and**_ have a user friendly experience fit for casual or advanced players.   
 This application pulls data from an external database, and stores that data locally. The app's speed comes from it being able to make quick queries to its local database to sort and filter pokemon by name, number, types, abilities, and a number of different data points. Users can then scroll through the desired data and select pokemon to add to their team. I hope that this application can be the go to for users who want to build their next team with all the information they need all in one place.
 
-## **Application Design**
+## **Application Design** <a name="application-design"></a>
 
 This application was designed with mobile smartphone use in mind, it will work on tablets but it is not optimized for the larger screen. The app requires internet access at first boot in order to download the data necessary to run from the external RESTful [PokeAPI](https://pokeapi.co). After that first download the data will be saved for future sessions. The app will request to download the data again if more data is available or if the stored data is deleted. The data requested from the API is used to generate the list of Pokemon the user can possibly add to their team as well as display and sort through their many attributes.
 
@@ -46,7 +46,7 @@ This Activity displays additional information to the user about the specified Po
 Numerous Searching and Filtering options are displayed to the user. The top spinner provide sorting options, including by name, ID number, or statistic. You can also order them in descending or ascending order by using the switch next to the sort options. The rest of the options on the page are for filtering. You can filter by a pokemon's generation of origin, or by type by toggling your choice.
 
 
-## **Implementation & Evaluation** <a name="project"></a>
+## **Implementation & Evaluation** <a name="implementation"></a>
 
 ### Implementation
 After mapping out the design and what features I wanted included in the project, I thought about what kinds of data structures would be handy. What came to mind was to develop the Pokemon java class, which allows for each Pokemon pulled from the API to be generated into an object for easy reference. I then thought about how to best keep track of selected team members. Which I decided to be a double ended queue, for quick insertion, as well as deletion from either end of the double ended queue for efficiency. Once those were decided, I quickly built the Pokemon java class and began working on the MainActivity.
@@ -79,20 +79,20 @@ The application's usability was tested by a couple of test subjects on different
 There is a situation where the ListView and database will contain duplicates of some of the Pokemon. This bug occurred once and has yet to be replicated, so it is unknown if it still exists.
 
 
-## **References**
+## **References** <a name="references"></a>
 This Project would not have been possible without the [PokeAPI](https://pokeapi.co). Which is a RESTful API that was created to be a single source of data for people wishing to use data on all currently existing Pokemon. When called for a given pokemon name or ID, the API returns JSON objects containing the statistics and relevant data points of that pokemon.  
   
 The images used for this project were compiled by github user [_msikma_]([PokeAPI](https://pokeapi.co)) and their project PokeSprite. 
 
 
-## **Experience and Thoughts**
+## **Experience and Thoughts** <a name="experience"></a>
 This project was a great learning experience. I got the chance to experiment with integrating SQL queries into Java, RESTful API calls, JSON parsing, as well as many different multi-threading techniques. Having an object that could be affected by concurrent threads made implementation complicated, but very rewarding. If I had more time I would have liked to implement more user features, such as a team weakness calculator, team exporting, and add more data points that the user can filter and sort by. I will most likely continue this project in my free time and implement the features that I did not have time to add. Overall, this project and this class both taught me a lot about Mobile Application Development on the Android platform.
 
-## **Install Instructions**
+## **Install Instructions** <a name="install"></a>
 ### _**Requirements**_
 API level 24 or above required for full functionality. 
 
-### _**Installation**_
+### _**Installation**_ 
 ### Android Studios  
 Download zip file and extract. Open in Android Studios and run on your favorite android virtual device.
 
@@ -103,7 +103,7 @@ Windows 11 Sideload is not directly supported but with the .apk it is [possible]
  
 
 
-## **License**
+## **License** <a name="license"></a>
 
 Pokemon is the intellectual property of © Nintendo/Creatures Inc./GAME FREAK Inc
 
