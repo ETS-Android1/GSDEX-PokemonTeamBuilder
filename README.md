@@ -8,7 +8,7 @@ Professor Sheng
 ![Overview Screenshot](https://github.com/kylehackett99/GSDEX-PokemonTeamBuilder/blob/main/screenshots/introimage.png)
 
 ## Table of Contents
-  1. Project Statement
+  1. [Project Statement](#project)
   2. Application Design
   3. Implementation and Evaluation
   4. References
@@ -16,13 +16,13 @@ Professor Sheng
   6. Install
   7. License
 
-## **Project Statement**
+## **Project Statement** 
 There are many different Pokedex (pokemon encyclopedia) apps on the market. The intent of this iteration was to surpass the functionality of those applications. I wanted to combine the concept of the traditional Pokedex app with the pokemon team builder web apps scattered across the internet, but with an added twist. I wanted to make finding pokemon that fit your team as easy as possible, as well as provide feedback to the user on their team's weaknesses. I have not seen too many team builders out there that have this functionality _**and**_ have a user friendly experience fit for casual or advanced players.   
 This application pulls data from an external database, and stores that data locally. The app's speed comes from it being able to make quick queries to its local database to sort and filter pokemon by name, number, types, abilities, and a number of different data points. Users can then scroll through the desired data and select pokemon to add to their team. I hope that this application can be the go to for users who want to build their next team with all the information they need all in one place.
 
 ## **Application Design**
 
-This application was designed with mobile use in mind, it will work on tablets but it is not optimized for the larger space. The app requires internet access at first boot in order to download the data necessary to run from the external RESTful [PokeAPI](https://pokeapi.co). After that first download the data will be saved for future sessions. The app will request to download the data again if more data is available or if the stored data is deleted. The data requested from the API is used to generate the list of Pokemon the user can possibly add to their team as well as display and sort through their many attributes.
+This application was designed with mobile smartphone use in mind, it will work on tablets but it is not optimized for the larger screen. The app requires internet access at first boot in order to download the data necessary to run from the external RESTful [PokeAPI](https://pokeapi.co). After that first download the data will be saved for future sessions. The app will request to download the data again if more data is available or if the stored data is deleted. The data requested from the API is used to generate the list of Pokemon the user can possibly add to their team as well as display and sort through their many attributes.
 
 
 ### Local SQLite Database
@@ -46,7 +46,7 @@ This Activity displays additional information to the user about the specified Po
 Numerous Searching and Filtering options are displayed to the user. The top spinner provide sorting options, including by name, ID number, or statistic. You can also order them in descending or ascending order by using the switch next to the sort options. The rest of the options on the page are for filtering. You can filter by a pokemon's generation of origin, or by type by toggling your choice.
 
 
-## **Implementation & Evaluation**
+## **Implementation & Evaluation** <a name="project"></a>
 
 ### Implementation
 After mapping out the design and what features I wanted included in the project, I thought about what kinds of data structures would be handy. What came to mind was to develop the Pokemon java class, which allows for each Pokemon pulled from the API to be generated into an object for easy reference. I then thought about how to best keep track of selected team members. Which I decided to be a double ended queue, for quick insertion, as well as deletion from either end of the double ended queue for efficiency. Once those were decided, I quickly built the Pokemon java class and began working on the MainActivity.
