@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">GSDex</string>
+    <string name="icon_size">70dp</string>
+    <string name="title_activity_sort_filter">Sort_Filter_Activity</string>
+
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+
+
+    <string-array name="sortoptions">
+        <item>Pokedex Number</item>
+        <item>Name</item>
+        <item>HP</item>
+        <item>Attack</item>
+        <item>Defense</item>
+        <item>Special Attack</item>
+        <item>Special Defense</item>
+        <item>Speed</item>
+        <item>Base Stat Total</item>
+    </string-array>
+
+    <string-array name="Generation">
+        <item>All Gens</item>
+        <item>Gen 1</item>
+        <item>Gen 2</item>
+        <item>Gen 3</item>
+        <item>Gen 4</item>
+        <item>Gen 5</item>
+        <item>Gen 6</item>
+        <item>Gen 7</item>
+        <item>Gen 8</item>
+    </string-array>
+
+
+</resources>
+

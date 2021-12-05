@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PokemonActivity">
+
+    <Button
+        android:id="@+id/backbutton"
+        android:layout_width="107dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:onClick="back"
+        android:text="BACK"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageV"
+        android:layout_width="230dp"
+        android:layout_height="197dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/abra" />
+
+    <TextView
+        android:id="@+id/nameV"
+        android:layout_width="302dp"
+        android:layout_height="65dp"
+        android:gravity="center"
+        android:text="name"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageV"
+        app:layout_constraintStart_toStartOf="@+id/imageV"
+        app:layout_constraintTop_toBottomOf="@+id/imageV" />
+
+    <TextView
+        android:id="@+id/dexNum"
+        android:layout_width="106dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="24dp"
+        android:text="DEXNUM"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/typeV"
+        android:layout_width="77dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="160dp"
+        android:text="TYPES"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/abilities"
+        android:layout_width="369dp"
+        android:layout_height="38dp"
+        android:text="Abilities"
+        app:layout_constraintBottom_toTopOf="@+id/HP"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.452"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nameV" />
+
+    <ProgressBar
+        android:id="@+id/ATTACK"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="158dp"
+        android:layout_height="39dp"
+        android:layout_marginBottom="8dp"
+        android:scaleY="2"
+        app:layout_constraintBottom_toTopOf="@+id/DEF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.264"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/SPDEF"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="158dp"
+        android:layout_height="39dp"
+        android:layout_marginBottom="4dp"
+        android:scaleY="2"
+        app:layout_constraintBottom_toTopOf="@+id/SPEED"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.264"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/HP"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="158dp"
+        android:layout_height="39dp"
+        android:layout_marginBottom="8dp"
+        android:scaleY="2"
+        app:layout_constraintBottom_toTopOf="@+id/ATTACK"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.264"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/SPATK"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="158dp"
+        android:layout_height="39dp"
+        android:layout_marginBottom="4dp"
+        android:scaleY="2"
+        app:layout_constraintBottom_toTopOf="@+id/SPDEF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.264"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/DEF"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="158dp"
+        android:layout_height="39dp"
+        android:layout_marginBottom="8dp"
+        android:scaleY="2"
+        app:layout_constraintBottom_toTopOf="@+id/SPATK"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.264"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/SPEED"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="158dp"
+        android:layout_height="39dp"
+        android:layout_marginBottom="68dp"
+        android:scaleY="2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.264"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="88dp"
+        android:layout_marginBottom="36dp"
+        android:text="Base Stat Total:"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/bstNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="36dp"
+        android:text="bst"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.314"
+        app:layout_constraintStart_toEndOf="@+id/textView8" />
+
+    <TextView
+        android:id="@+id/hpStat"
+        android:layout_width="54dp"
+        android:layout_height="21dp"
+        android:layout_marginBottom="28dp"
+        android:text="hpStat"
+        app:layout_constraintBottom_toTopOf="@+id/atkStat"
+        app:layout_constraintStart_toEndOf="@+id/HP" />
+
+    <TextView
+        android:id="@+id/spaStat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/spdStat"
+        app:layout_constraintStart_toEndOf="@+id/SPATK" />
+
+    <TextView
+        android:id="@+id/spdStat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/speedStat"
+        app:layout_constraintStart_toEndOf="@+id/SPDEF" />
+
+    <TextView
+        android:id="@+id/atkStat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/defStat"
+        app:layout_constraintStart_toEndOf="@+id/ATTACK" />
+
+    <TextView
+        android:id="@+id/speedStat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/bstNum"
+        app:layout_constraintStart_toEndOf="@+id/SPEED" />
+
+    <TextView
+        android:id="@+id/defStat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/spaStat"
+        app:layout_constraintStart_toEndOf="@+id/DEF" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+
+    <SearchView
+        android:id="@+id/searchbox"
+        android:layout_width="177dp"
+        android:layout_height="48dp"
+        android:hapticFeedbackEnabled="true"
+        app:layout_constraintBottom_toTopOf="@+id/dexView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button2" />
+
+    <LinearLayout
+        android:id="@+id/teamrow1"
+        android:layout_width="372dp"
+        android:layout_height="74dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@+id/dexView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.006">
+
+        <ImageButton
+            android:id="@+id/hamburger"
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="@color/cardview_light_background"
+            android:minWidth="48dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@color/cardview_shadow_end_color"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <ImageButton
+            android:id="@+id/member1"
+            android:layout_width="72dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:backgroundTint="@color/cardview_shadow_end_color"
+            android:onClick="removeMember"
+            android:scaleType="centerCrop"
+            android:tag="1"
+            app:srcCompat="@drawable/pokeball"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/member2"
+            android:layout_width="72dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="@color/cardview_shadow_end_color"
+            android:onClick="removeMember"
+            android:tag="2"
+            app:srcCompat="@drawable/pokeball"
+            tools:ignore="SpeakableTextPresentCheck,ImageContrastCheck"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center"/>
+
+        <ImageButton
+            android:id="@+id/member3"
+            android:layout_width="72dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="@color/cardview_shadow_end_color"
+            android:onClick="removeMember"
+            android:tag="3"
+            app:srcCompat="@drawable/pokeball"
+            tools:ignore="SpeakableTextPresentCheck"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/teamrow2"
+        android:layout_width="372dp"
+        android:layout_height="74dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="@+id/teamrow1"
+        app:layout_constraintTop_toBottomOf="@+id/teamrow1">
+
+        <ImageButton
+            android:id="@+id/resetTeam"
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:backgroundTint="@color/cardview_light_background"
+            android:scaleType="centerCrop"
+            app:srcCompat="@color/cardview_shadow_end_color"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/member4"
+            android:layout_width="72dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:backgroundTint="@color/cardview_shadow_end_color"
+            android:onClick="removeMember"
+            android:scaleType="centerCrop"
+            android:tag="4"
+            app:srcCompat="@drawable/pokeball"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/member5"
+            android:layout_width="72dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:backgroundTint="@color/cardview_shadow_end_color"
+            android:onClick="removeMember"
+            android:scaleType="centerCrop"
+            android:tag="5"
+            app:srcCompat="@drawable/pokeball"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <ImageButton
+            android:id="@+id/member6"
+            android:layout_width="72dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:backgroundTint="@color/cardview_shadow_end_color"
+            android:onClick="removeMember"
+            android:scaleType="centerCrop"
+            android:tag="6"
+            app:srcCompat="@drawable/pokeball"
+            tools:ignore="SpeakableTextPresentCheck" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/dexView"
+        android:layout_width="wrap_content"
+        android:layout_height="333dp"
+        android:divider="#000"
+        android:dividerHeight="1dp"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+    </ListView>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="176dp"
+        android:layout_marginEnd="44dp"
+        android:onClick="changeFilter"
+        android:text="FILTER/SORT"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="176dp"
+        android:onClick="resetTeam"
+        android:text="Reset"
+        app:layout_constraintEnd_toStartOf="@+id/button2"
+        app:layout_constraintHorizontal_bias="0.525"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
