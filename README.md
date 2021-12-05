@@ -35,7 +35,7 @@ Pictured above is the structure that stores all the pokemon data behind the scen
 ![MainActivityScreenshot](https://github.com/kylehackett99/GSDEX-PokemonTeamBuilder/blob/main/screenshots/mainpage.png)  
 Main View where the user will perform most of their actions. Users can access the other Activities as well as manage their team by either adding or removing members. Team members can be added to their team by clicking on their image in the list, which can be traversed either by search box or by scrolling through. The search box allows users to search for a particular pokemon by name, or by ability. Clicking a species' image in the team will remove that member. Filter and Sorting options are available by clicking the Filter/Sort Button. Clicking on a Pokemon Species will show the user a menu with additional info. 
 
-This activity will be the hub of where all the java classes will interact with one another. The MainActivity will bundle and send data to the PokemonDetails activity, and receives arguments from the SortFilter activity on creation.  
+This activity will be the hub of where all the java classes will interact with one another. The MainActivity will bundle and send data to the PokemonDetails activity, and receives arguments from the SortFilter activity on creation; defining what is in the ListView.  
 
 ### Pokemon Details
 ![Details Screenshot](https://github.com/kylehackett99/GSDEX-PokemonTeamBuilder/blob/main/screenshots/pokemondetails.png)  
